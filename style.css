@@ -666,8 +666,7 @@ main.row {
 .projectName h3 {
     font-size: 1.5em;
     text-transform: capitalize;
-    color: #754ef9;
-    
+    color: #754ef9;  
     font-weight: bold;
 }
 
@@ -839,7 +838,7 @@ footer p a {
     }
     .bodyFooter {
         min-height: 100vh;
-    } 
+    }
 }
 
 @media  screen and (max-width: 990px) {
@@ -854,7 +853,6 @@ footer p a {
     }
     .sourceCode button {
         padding: 2px 3px;
-        
     }
 }
 
@@ -870,6 +868,17 @@ footer p a {
     }
     .sourceCode button {
         padding: 2px 3px;
-        
+    }
+    .navbar a {
+        position: relative;
+        display: inline-block;
+        font-size: 15px;
+        color: #0b061f;
+        text-decoration: none;
+        font-weight: 500;
+        margin-right: 35px;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: calc(.1s * var(--i));
     }
 }
